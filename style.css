@@ -1,0 +1,41 @@
+body{
+    background:linear-gradient(to bottom right,aqua 30%,lightblue 60%,blue 90%);
+    color:white;
+}
+.heading{
+    font-weight:bold;
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+#startEmoji{
+    padding:5px;
+    font-size:35px;
+}
+b{
+    font-size: 30px;
+}
+#objects{
+    background-color: blue;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(44, 39, 39);
+}
+#webcam{
+    background-color: blue;
+    color:white;
+    box-shadow: 5px 5px 5px rgb(44, 39, 39);
+}
+#pic{
+    background-color: blue;
+    color:white;
+    box-shadow: 5px 5px 5px rgb(44, 39, 39);
+    display:none;
+}
+#resultDiv{
+    background-color: blue;
+    color:white;
+    box-shadow: 5px 5px 5px rgb(44, 39, 39);
+    display:none;
+}
+#result{
+    border:2px dotted white;
+}

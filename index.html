@@ -1,0 +1,64 @@
+
+<html>
+    <head>
+        <title>Hand-gestures recognititon</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+        <link rel="stylesheet" href="style.css">
+    <body onload="load()">
+        <div class="container">
+            <center>
+                <h1 class="btn btn-primary heading" onclick="load()">HANDGESTURES RECOGNITION<br><p id="startEmoji">&#128079;&#128077;</p></h1>
+                <br>
+                <br>
+                <div id="objects">
+                    <br>
+                    <h3>The following Web App is trained to identify the following gestures.</h3>
+                    <br>
+                    <b>&#9996;</b>
+                    <hr>
+                    <b>&#128076;</b>
+                    <hr>
+                    <b>&#128077;</b>
+                    <hr>
+                    <br>
+                </div>
+                <br>
+                <div id="webcam">
+                    <label>Webcam:</label>
+                    <div id="camera"></div>
+                    <br>
+                    <button class="btn btn-info" onclick="snapshot()">Capture Image</button>
+                    <br>
+                </div>
+                <div id="pic">
+                    <label>Picture:</label>
+                    <div id="result"></div>
+                    <br>
+                    <button class="btn btn-info" onclick="predict()">Predict</button>
+                </div>
+                <div id="resultDiv">
+                    <br>
+                    <img id="picture">
+                    <br>
+                    <label>The gesture is :-</label>
+                    <br>
+                    <i id="resultEmoji" style="font-size:40px;"></i>
+                    <br>
+                    <i id="resultText" style="font-size: 35px;"></i>
+                    <hr>
+                    <button class="btn btn-info" onclick="reset()">Try again</button>
+                </div>
+                <br>
+            </center>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
